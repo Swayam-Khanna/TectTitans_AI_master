@@ -1,0 +1,13 @@
+packages:
+  "framer-motion": "For advanced scroll reveals, hover effects, and page load animations"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to merge tailwind classes without style conflicts"
+
+images:
+  - path: "artifacts/techtitans-ai/public/images/hero-visual.png"
+    description: "Abstract 3D glowing glassmorphism shapes in vibrant blue and green floating on a dark background"
+    aspect_ratio: "1:1"
+
+notes:
+  - "Single-page agency landing site. Pure frontend implementation."
+  - "Contact form is state-based (success message on submit) without backend integration."

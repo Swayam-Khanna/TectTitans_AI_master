@@ -1,0 +1,412 @@
+Good. Now we do this **properly like a real product spec**, not random notes.
+
+This is your **MASTER SRS (final blueprint)** — if you follow this, your site will look premium. If you ignore it, it will look like a student project again.
+
+---
+
+# 📄 MASTER SRS — **TechTitans AI Website**
+
+---
+
+# 🧠 1. PRODUCT OVERVIEW
+
+## 🎯 Product Name:
+
+**TechTitans AI**
+
+## 🎯 Purpose:
+
+A **premium digital service platform** that:
+
+* Showcases services
+* Builds trust instantly
+* Converts visitors into clients
+* Scales into a full SaaS/AI service platform
+
+---
+
+## 🎯 Core Goal:
+
+👉 “User lands → feels premium → trusts → contacts”
+
+---
+
+## 👤 Target Users:
+
+* Startup founders
+* YouTubers / creators
+* Businesses (India + international)
+* Clients needing branding / editing / dev
+
+---
+
+# 🎨 2. DESIGN SYSTEM (LOCKED)
+
+---
+
+## 🎨 Color System (Final)
+
+### 🔥 Base
+
+```plaintext
+Primary Background → #0B0F19
+Secondary Background → #111827
+Card Background → rgba(255,255,255,0.03)
+Border → rgba(255,255,255,0.08)
+```
+
+---
+
+### ⚡ Accent
+
+```plaintext
+Blue → #3B82F6
+Green → #22C55E
+Gradient → linear-gradient(135deg, #3B82F6, #22C55E)
+```
+
+---
+
+### 💡 Usage Rule
+
+* 80% dark
+* 15% text/neutral
+* 5% gradient
+
+👉 If you break this → UI becomes cheap
+
+---
+
+# 🔤 3. TYPOGRAPHY SYSTEM
+
+---
+
+## 🔥 Fonts
+
+* Headings → **Sora**
+* Body → **Inter**
+
+---
+
+## 📏 Hierarchy
+
+```plaintext
+H1 → 56–64px
+H2 → 36–40px
+H3 → 24px
+Body → 16–18px
+Small → 14px
+```
+
+---
+
+## ⚠️ Rule
+
+👉 No random fonts
+👉 No mixing more than 2 fonts
+
+---
+
+# 🎬 4. ANIMATION SYSTEM (CRITICAL)
+
+---
+
+## ⚠️ Philosophy
+
+👉 Smooth > flashy
+👉 Subtle > dramatic
+
+---
+
+## 🔥 Global Animations
+
+| Type      | Behavior               |
+| --------- | ---------------------- |
+| Page Load | Fade + slide up (0.6s) |
+| Scroll    | Section reveal         |
+| Hover     | Scale (1.03–1.05)      |
+| Buttons   | Glow + scale           |
+| Cards     | Lift + shadow          |
+
+---
+
+# 🧩 5. SECTION-WISE MASTER PLAN
+
+---
+
+# 🏠 HERO SECTION (Conversion Engine)
+
+![Image](https://cdn.dribbble.com/userupload/14725898/file/original-a945dd33300e8f12a266c7774c77fbea.png?crop=0x0-2400x1800\&format=webp\&resize=400x300\&vertical=center)
+
+![Image](https://cdn.dribbble.com/userupload/46454068/file/57c6908b7647c110645acd01b2573181.png?resize=752x\&vertical=center)
+
+![Image](https://images.openai.com/static-rsc-3/UBptGcj5ZpBuDt0MTDWjdeks83y7_0W59_3FphswjZN_rJEwT9xC7WdWTcpgBIfL-kmXkdGmQgbYriUH37f5xz8u7_Hk_AGByzQCIYZHIHw?purpose=fullsize\&v=1)
+
+![Image](https://images.openai.com/static-rsc-3/ebsrDtKuEm5AUsrneC5Th6sa0Zd3mXPsZEF00ENGPhU-o1TbUjjuYQgtCRCeHByIwsvaZwyef0cMCzOwODJGomF84XoxQMd8ptdOqRP6Jsc?purpose=fullsize\&v=1)
+
+## 🎯 Goal:
+
+* Hook user in 3 seconds
+* Establish authority
+
+---
+
+## 🧱 Structure:
+
+* Left → Content
+* Right → Visual card (glass + glow)
+
+---
+
+## 🎬 Animations:
+
+* Heading → slide up
+* Subtext → fade
+* Buttons → scale
+* Background → slow glow
+
+---
+
+## ⚠️ Must:
+
+* Strong headline
+* Clear CTA
+* Clean spacing
+
+---
+
+# 🧩 SERVICES SECTION (Clarity + Value)
+
+![Image](https://cdn.dribbble.com/userupload/46003550/file/3929260749e0a1fb4ac4ea5796f2cd31.jpg?format=webp\&resize=400x300\&vertical=center)
+
+![Image](https://cdn.dribbble.com/userupload/12417017/file/original-fa10e31dde02e708e8391d02cf264def.png?resize=400x0)
+
+![Image](https://s3-alpha.figma.com/hub/file/2219873669325285849/936a6103-4404-4a57-b886-dea1343fbe5f-cover.png)
+
+![Image](https://cdn.dribbble.com/userupload/46824841/file/7d634d51e89a9aa6b7f96340e3e6dc93.png?format=webp\&resize=400x300\&vertical=center)
+
+## 🎯 Goal:
+
+Explain what you do quickly
+
+---
+
+## 🧱 Services (Your Final List)
+
+* Branding
+* Video Editing
+* Graphic Design
+* Web Development
+* (Future: AI Automation)
+
+---
+
+## 🎬 Animations:
+
+* Cards appear staggered
+* Hover:
+
+  * lift
+  * glow border
+  * scale
+
+---
+
+# 🎯 PORTFOLIO SECTION (Trust Builder)
+
+![Image](https://s3.envato.com/files/660085843/00_preview.__large_preview.png)
+
+![Image](https://www.framer.com/creators-assets/_next/image/?q=100\&url=https%3A%2F%2Fy4pdgnepgswqffpt.public.blob.vercel-storage.com%2Ftemplates%2F46204%2FVIDEOHUT__2_-m2bCRggZhQjrYPvi0NDxu6l79XUnyH.png\&w=3840)
+
+![Image](https://s3.envato.com/files/315771123/01_tumar-preview.__large_preview.png)
+
+![Image](https://camo.envatousercontent.com/19b4d8befc0e2020ece551bc47c0bac315cfd7a2/68747470733a2f2f75697468656d657a2e636f6d2f692f6d69766f6e5f68746d6c2f646573312e706e67)
+
+## 🎯 Goal:
+
+Show proof of work
+
+---
+
+## 🧱 Structure:
+
+* Grid layout
+* Hover overlay
+* Preview style
+
+---
+
+## 🎬 Animations:
+
+* Hover zoom
+* Text overlay fade
+
+---
+
+# 📩 CONTACT SECTION (Conversion Point)
+
+![Image](https://cdn.dribbble.com/userupload/17764959/file/original-94e6942acb541d6dc96a7471c8539e5d.png)
+
+![Image](https://cdn.dribbble.com/userupload/14857221/file/original-37e30e449600809e57242cf05bcd5fd2.jpg?format=webp\&resize=400x300\&vertical=center)
+
+![Image](https://images.openai.com/static-rsc-3/UBptGcj5ZpBuDt0MTDWjdeks83y7_0W59_3FphswjZN_rJEwT9xC7WdWTcpgBIfL-kmXkdGmQgbYriUH37f5xz8u7_Hk_AGByzQCIYZHIHw?purpose=fullsize\&v=1)
+
+![Image](https://images.openai.com/static-rsc-3/RTMeyWGiWkrrUVaIrflPHbEGF2idQ4UjmZOPDTYhmpiFkfJ43stpj54ZoG_x4vf-phDaAR057RzTGcTzC4UUni3JSi8jrKvmBMNykm78gW4?purpose=fullsize\&v=1)
+
+## 🎯 Goal:
+
+Convert visitor → client
+
+---
+
+## 🧱 Fields:
+
+* Name
+* Email
+* Service
+* Message
+
+---
+
+## 🎬 Animations:
+
+* Input focus glow
+* Button hover
+* Form fade
+
+---
+
+# 🔻 FOOTER (Closure)
+
+![Image](https://cdn.prod.website-files.com/687e8d1b96312cc631cafec7/6983ed56956e58f56936d71d_696fcb580bb63cb31222ddcf_a4b47177.png)
+
+![Image](https://cdn.dribbble.com/userupload/45642250/file/13b5e22ec566b525e06ff152394b91d9.png?format=webp\&resize=400x300\&vertical=center)
+
+![Image](https://cdn.dribbble.com/userupload/45966320/file/63d6957d4c2ec55fa0966ae48a5bb157.png?resize=400x0)
+
+![Image](https://cdn.dribbble.com/userupload/18394680/file/original-9377a3d23ca3c0191648ec22e9204b1a.jpg?resize=400x0)
+
+## 🎯 Goal:
+
+Professional ending
+
+---
+
+## 🎬 Animations:
+
+Minimal (keep clean)
+
+---
+
+# 📐 6. LAYOUT SYSTEM (MOST IMPORTANT)
+
+---
+
+## 🔥 Container
+
+```plaintext
+max-w-7xl mx-auto px-6 md:px-12
+```
+
+---
+
+## 📏 Spacing
+
+```plaintext
+Section padding → py-20
+Gap → gap-10 / gap-12
+```
+
+---
+
+## ⚠️ Rule
+
+👉 No content touching edges
+👉 Always breathing space
+
+---
+
+# 📱 7. RESPONSIVENESS
+
+---
+
+## Breakpoints
+
+* Mobile → 1 column
+* Tablet → stacked
+* Desktop → grid
+
+---
+
+## Rules
+
+* Buttons full width (mobile)
+* Text centered (mobile)
+* Grid collapses
+
+---
+
+# ⚡ 8. PERFORMANCE & SMOOTHNESS
+
+---
+
+## Must:
+
+* No heavy animations
+* Lazy load images
+* Optimize assets
+* Smooth scroll
+
+---
+
+# 🔐 9. FUTURE FEATURES
+
+* Authentication
+* Dashboard
+* Payment integration
+* AI services
+
+---
+
+# 🧠 10. USER FLOW
+
+```plaintext
+Hero → Services → Portfolio → Contact → Conversion
+```
+
+---
+
+# ❌ 11. MISTAKES YOU MUST AVOID
+
+* Random spacing ❌
+* Too many colors ❌
+* Over animations ❌
+* No hierarchy ❌
+
+---
+
+# 🚀 FINAL RESULT
+
+If followed properly:
+
+👉 Website will feel like:
+
+* Premium agency
+* Startup SaaS
+* Trustworthy brand
+
+---
+
+# 🔥 NEXT STEP
+
+Now we EXECUTE:
+
+👉 **Services Section (real premium UI code)**
+
+---
+
+Reply:
+
+👉 “Start Services UI”
+
+Now we build like professionals — no more guessing.

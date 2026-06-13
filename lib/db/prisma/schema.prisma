@@ -1,0 +1,84 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  USER
+  ADMIN
+  EDITOR
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  name      String
+  role      Role     @default(USER)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("users")
+}
+
+model Project {
+  id                  String   @id
+  title               String
+  tagline             String   @default("")
+  overview            String   @db.Text
+  challenge           String   @db.Text
+  solution            String   @db.Text
+  serviceId           String   @default("branding") @map("service_id")
+  subServiceId        String   @default("") @map("sub_service_id")
+  category            String   @default("")
+  subCategory         String   @default("") @map("sub_category")
+  tags                String[]
+  image               String
+  coverImage          String   @default("") @map("cover_image")
+  results             Json     // [{ label: string, value: string }]
+  services            String[]
+  year                String
+  duration            String
+  status              String   @default("draft") // draft, published, archived
+  featured            Boolean  @default(false)
+  imagePosition       String   @default("center") @map("image_position")
+  coverImagePosition  String   @default("center") @map("cover_image_position")
+  gallery             String[]
+  clientName          String?  @map("client_name")
+  industry            String?
+  budget              String?
+  ctaLink             String?  @map("cta_link")
+  liveLink            String?  @map("live_link")
+  behanceLink         String?  @map("behance_link")
+  toolsUsed           String[] @map("tools_used")
+  createdAt           DateTime @default(now()) @map("created_at")
+  updatedAt           DateTime @updatedAt @map("updated_at")
+
+  @@map("projects")
+}
+
+model Event {
+  id          String   @id @default(uuid())
+  title       String
+  description String   @db.Text
+  date        DateTime
+  location    String
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@map("events")
+}
+
+model DynamicContent {
+  id        String   @id @default(uuid())
+  key       String   @unique
+  value     Json
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("dynamic_content")
+}
