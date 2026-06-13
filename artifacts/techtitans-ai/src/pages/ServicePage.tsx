@@ -137,11 +137,14 @@ export default function ServicePage() {
                   onClick={() => navigate(`/portfolio/${project.id}`)}
                   className="group cursor-pointer glass-card rounded-2xl overflow-hidden"
                 >
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden aspect-[16/10.5] w-full bg-gradient-to-br from-white/5 to-white/10">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-auto block opacity-70 group-hover:opacity-95 group-hover:scale-[1.03] transition-all duration-500"
+                      className="w-full h-full object-cover block opacity-70 group-hover:opacity-95 group-hover:scale-[1.03] transition-all duration-500"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
                     <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />

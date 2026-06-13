@@ -45,16 +45,19 @@ export function Portfolio() {
               <FadeIn key={project.id} delay={0.1 * (index + 1)}>
                 <div
                   onClick={() => navigate(`/portfolio/${project.id}`)}
-                  className="group relative rounded-3xl overflow-hidden glass-card cursor-pointer"
+                  className="group relative rounded-3xl overflow-hidden glass-card cursor-pointer aspect-[16/11] md:aspect-[4/3] w-full bg-gradient-to-br from-white/5 to-white/10"
                 >
-                  <div className="overflow-hidden">
+                  <div className="w-full h-full overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-auto block transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
                     />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-accent/30 opacity-0 group-hover:opacity-30 mix-blend-overlay transition-opacity duration-500" />
                   <div className="absolute inset-0 p-8 flex flex-col justify-end">
                     <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">

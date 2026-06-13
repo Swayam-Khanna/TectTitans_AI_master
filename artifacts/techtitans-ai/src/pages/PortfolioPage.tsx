@@ -140,11 +140,14 @@ export default function PortfolioPage() {
                   >
                     <div className="rounded-3xl overflow-hidden glass-card relative">
                       {/* Image */}
-                      <div className="relative overflow-hidden">
+                      <div className="relative overflow-hidden aspect-[16/10.5] w-full bg-gradient-to-br from-white/5 to-white/10">
                         <img
                           src={project.image}
                           alt={project.title}
-                          className="w-full h-auto block opacity-80 group-hover:opacity-100 group-hover:scale-[1.03] transition-all duration-700"
+                          className="w-full h-full object-cover block opacity-80 group-hover:opacity-100 group-hover:scale-[1.03] transition-all duration-700"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                          }}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/10 to-transparent" />
                         {activeService && (
