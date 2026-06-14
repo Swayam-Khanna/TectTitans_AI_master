@@ -73,7 +73,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email Us</h4>
-                    <p className="text-foreground-muted">gameralipmk@gmail.com</p>
+                    <p className="text-foreground-muted">TechTitansAi@zohomail.in</p>
                   </div>
                 </div>
 

@@ -1,6 +1,7 @@
 import { Router } from "express";
 import multer from "multer";
 import { createHmac } from "crypto";
+import jwt from "jsonwebtoken";
 import { join, dirname, extname } from "path";
 import { fileURLToPath } from "url";
 import { existsSync, mkdirSync } from "fs";
@@ -11,15 +12,22 @@ const UPLOADS_DIR = join(__dirname, "../../uploads");
 
 if (!existsSync(UPLOADS_DIR)) mkdirSync(UPLOADS_DIR, { recursive: true });
 
-const ADMIN_PASSWORD = process.env["ADMIN_PASSWORD"] || "techtitans2024";
 const SECRET = process.env["ADMIN_SECRET"] || "tt_secret_key_2024";
-const VALID_TOKEN = createHmac("sha256", SECRET).update(ADMIN_PASSWORD).digest("hex");
 
 function requireAdmin(req: Request, res: Response, next: NextFunction) {
   const auth = req.headers["authorization"];
   if (!auth || !auth.startsWith("Bearer ")) { res.status(401).json({ error: "Unauthorized" }); return; }
-  if (auth.slice(7) !== VALID_TOKEN) { res.status(401).json({ error: "Invalid token" }); return; }
-  next();
+  const token = auth.slice(7);
+  try {
+    const decoded = jwt.verify(token, SECRET) as { role?: string };
+    if (decoded.role !== "ADMIN") {
+      res.status(401).json({ error: "Invalid token role" });
+      return;
+    }
+    next();
+  } catch (err) {
+    res.status(401).json({ error: "Invalid token" });
+  }
 }
 
 const ALLOWED_TYPES: Record<string, string> = {

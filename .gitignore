@@ -36,3 +36,9 @@ pnpm-debug.log*
 replit.md
 .DS_Store
 Thumbs.db
+
+# Uploaded media assets
+artifacts/uploads/
+
+# SMTP test scripts
+*test-email.js

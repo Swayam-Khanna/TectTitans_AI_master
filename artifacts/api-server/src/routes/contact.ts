@@ -11,24 +11,31 @@ router.post("/contact", async (req, res) => {
     return;
   }
 
-  const gmailPassword = process.env.GMAIL_APP_PASSWORD;
-  if (!gmailPassword) {
-    req.log.error("GMAIL_APP_PASSWORD is not set");
+  const emailUser = process.env.EMAIL_USER;
+  const emailPass = process.env.EMAIL_PASS;
+  const emailHost = process.env.EMAIL_HOST || "smtp.zoho.in";
+  const emailPort = Number(process.env.EMAIL_PORT) || 465;
+  const contactReceiver = process.env.CONTACT_RECEIVER || emailUser;
+
+  if (!emailUser || !emailPass) {
+    req.log.error("Email credentials (EMAIL_USER or EMAIL_PASS) are not set");
     res.status(500).json({ success: false, error: "Email service not configured." });
     return;
   }
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: emailHost,
+    port: emailPort,
+    secure: emailPort === 465,
     auth: {
-      user: "gameralipmk@gmail.com",
-      pass: gmailPassword,
+      user: emailUser,
+      pass: emailPass,
     },
   });
 
   const mailOptions = {
-    from: `"TechTitans AI Contact" <gameralipmk@gmail.com>`,
-    to: "gameralipmk@gmail.com",
+    from: `"TechTitans AI Contact" <${emailUser}>`,
+    to: contactReceiver,
     replyTo: email,
     subject: `New Inquiry: ${service} — from ${name}`,
     html: `
