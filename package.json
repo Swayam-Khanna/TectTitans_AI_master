@@ -8,7 +8,7 @@
     "dev": "npx pnpm --filter \"./artifacts/**\" --parallel run dev",
     "build": "npx pnpm run typecheck && npx pnpm -r --if-present run build",
     "typecheck:libs": "tsc --build",
-    "typecheck": "npx pnpm run typecheck:libs && npx pnpm -r --filter \"./artifacts/**\" --if-present run typecheck"
+    "typecheck": "npx pnpm --filter @workspace/db generate && npx pnpm run typecheck:libs && npx pnpm -r --filter \"./artifacts/**\" --if-present run typecheck"
   },
   "private": true,
   "devDependencies": {
