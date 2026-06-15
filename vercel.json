@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "pnpm install --no-frozen-lockfile --pm-on-fail=ignore",
+  "installCommand": "pnpm install --no-frozen-lockfile",
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
