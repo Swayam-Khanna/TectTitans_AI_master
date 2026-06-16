@@ -18,6 +18,8 @@ import AdminLogin from "@/pages/admin/AdminLogin";
 import AdminDashboard from "@/pages/admin/AdminDashboard";
 import ProjectForm from "@/pages/admin/ProjectForm";
 
+import { AIChatHelper } from "@/components/AIChatHelper";
+
 const queryClient = new QueryClient();
 
 function AppRoutes() {
@@ -63,6 +65,7 @@ function AppRoutes() {
         <Route path="/services/:serviceId/:subServiceId" component={SubServicePage} />
         <Route component={NotFound} />
       </Switch>
+      {!isAdmin && <AIChatHelper />}
     </>
   );
 }

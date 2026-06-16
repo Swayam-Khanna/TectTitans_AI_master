@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, MapPin, Phone, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { Button } from "./ui/button";
 import { FadeIn } from "./ui/fade-in";
 
@@ -54,7 +54,7 @@ export function Contact() {
       <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-accent/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
           {/* Left: Info */}
           <div>
@@ -66,37 +66,7 @@ export function Contact() {
                 Ready to elevate your digital presence? Reach out to us to discuss your project, and let's create something extraordinary.
               </p>
 
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full glass-card flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">Email Us</h4>
-                    <p className="text-foreground-muted">TechTitansAi@zohomail.in</p>
-                  </div>
-                </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full glass-card flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-accent" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">Location</h4>
-                    <p className="text-foreground-muted">India &amp; Global Remote Team</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full glass-card flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">Response Time</h4>
-                    <p className="text-foreground-muted">Within 24 hours</p>
-                  </div>
-                </div>
-              </div>
             </FadeIn>
           </div>
 
