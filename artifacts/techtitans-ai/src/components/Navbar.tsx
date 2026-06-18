@@ -31,7 +31,7 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3 md:gap-4 group relative z-50">
+        <a href="#" className="flex items-center gap-1.5 md:gap-2 group relative z-50">
           <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
             <img
               src="/logo.png"
