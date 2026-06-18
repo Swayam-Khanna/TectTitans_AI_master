@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand/Logo Column */}
           <div className="flex flex-col items-start">
             <a href="#" className="mb-3 inline-block">
-              <div className="w-16 h-16 rounded-full overflow-hidden bg-gradient-to-tr from-blue-900 to-teal-950 flex items-center justify-center p-1.5 border border-white/10 shadow-lg">
+              <div className="w-16 h-16 flex items-center justify-center">
                 <img src="/logo.png" alt="TechTitansAI" className="w-full h-full object-contain" />
               </div>
             </a>

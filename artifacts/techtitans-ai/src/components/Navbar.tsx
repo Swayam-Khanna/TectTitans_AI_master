@@ -32,7 +32,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 md:gap-4 group relative z-50">
-          <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden bg-gradient-to-tr from-blue-950 to-slate-900 flex items-center justify-center p-1.5 border border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.4)] transition-transform duration-300 group-hover:scale-105 group-hover:border-primary/50">
+          <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
             <img
               src="/logo.png"
               alt="TechTitans AI"
