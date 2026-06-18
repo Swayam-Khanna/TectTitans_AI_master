@@ -54,7 +54,7 @@ export function Footer() {
 
           {/* Quick Links Column */}
           <div>
-            <h4 className="font-serif text-white font-bold text-base mb-4">Quick Links</h4>
+            <h4 className="font-display text-white font-bold text-base mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="/#services" className="hover:text-white transition-colors text-sm">Services</a></li>
               <li><a href="/portfolio" className="hover:text-white transition-colors text-sm">Portfolio</a></li>
@@ -65,7 +65,7 @@ export function Footer() {
 
           {/* Legal Column */}
           <div>
-            <h4 className="font-serif text-white font-bold text-base mb-4">Legal</h4>
+            <h4 className="font-display text-white font-bold text-base mb-4">Legal</h4>
             <ul className="space-y-2">
               <li><a href="/terms-conditions" className="hover:text-white transition-colors text-sm">Terms of Service</a></li>
               <li><a href="/privacy-policy" className="hover:text-white transition-colors text-sm">Data Privacy Policy</a></li>
@@ -75,7 +75,7 @@ export function Footer() {
 
           {/* Contact Column */}
           <div>
-            <h4 className="font-serif text-white font-bold text-base mb-4">Contact</h4>
+            <h4 className="font-display text-white font-bold text-base mb-4">Contact</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-sm">
                 <Phone className="w-4 h-4 text-neutral-400 flex-shrink-0" />
